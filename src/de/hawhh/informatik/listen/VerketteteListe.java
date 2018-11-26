@@ -26,7 +26,6 @@ public class VerketteteListe<E> extends AbstractList<E> {
     }
 
     //  2 Pflichtmethoden
-
     /**
      * Returns the element at the specified position in this list.
      * Throws IndexOutOfBoundsException - if the index is out of range (index < 0 || index >= size())

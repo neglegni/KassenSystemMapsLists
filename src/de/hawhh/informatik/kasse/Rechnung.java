@@ -3,7 +3,7 @@ package de.hawhh.informatik.kasse;
 import java.util.*;
 
 // TODO Iterierbar machen
-public class Rechnung  {
+public class Rechnung implements Iterable<Rechnung> {
 
     private final String nr;
     private final List<Position> positionen;
@@ -32,6 +32,11 @@ public class Rechnung  {
                 "nr='" + nr + '\'' +
                  positionen +
                 ']';
+    }
+
+    @Override
+    public Iterator<Rechnung> iterator() {
+        return null;
     }
 
     /**
