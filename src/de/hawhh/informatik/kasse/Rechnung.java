@@ -21,10 +21,10 @@ public class Rechnung  {
         this.positionen.add(pos);
     }
 
-    public int betrag(){
+    //public int betrag(){
         // TODO
-        return -1;
-    }
+     //   return -1;
+   // }
 
     @Override
     public String toString() {
@@ -36,9 +36,9 @@ public class Rechnung  {
 
     /**
      * Nur Methoden des Java-Streamen API nutzen.
-     */
+     *
     public int betrag(){
         return gesamtwert;
-    }
+    }*/
 
 }
