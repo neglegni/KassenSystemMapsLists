@@ -13,9 +13,15 @@ public class MapUtils {
      * @param m2
      * @return
      */
-    public static Map<Integer,Integer> intersect(Map<Integer,Integer> m1, Map<Integer,Integer> m2) {
-       //TODO
-        return null;
+    public static Map<Integer, Integer> intersect(Map<Integer, Integer> m1, Map<Integer, Integer> m2) {
+        Map<Integer, Integer> ergebnis = new HashMap<>();
+
+        for (Integer schluessel : m1.keySet()) {
+            if (m2.containsKey(schluessel) && m2.get(schluessel) == m1.get(schluessel)) {
+                ergebnis.put(schluessel, m2.get(schluessel));
+            }
+        }
+        return ergebnis;
     }
 
     /**
@@ -26,13 +32,24 @@ public class MapUtils {
      * @param m2
      * @return
      */
-    public static Map<Integer,Set<Integer>> intersectJoinValues(Map<Integer,Integer> m1, Map<Integer,Integer> m2) {
-        //TODO
-        return null;
+    public static Map<Integer, Set<Integer>> intersectJoinValues(Map<Integer, Integer> m1, Map<Integer, Integer> m2) {
+        Map<Integer, Set<Integer>> ergebnis = new HashMap<>();
+
+        for (Integer schluessel1 : m1.keySet()) {
+            Integer wert1 = m1.get(schluessel1);
+            for (Integer schluessel2 : m2.keySet()) {
+                Integer wert2 = m2.get(schluessel2);
+                if (schluessel1 == schluessel2) {
+                    ergebnis.put(schluessel1, new HashSet<>(Arrays.asList(wert1)));
+                    ergebnis.get(schluessel1).add(wert2);
+                }
+            }
+        }
+        return ergebnis;
     }
 
     /**
-     *Die Methode erzeugt aus m1 und m2 eine neue Map, in der alle Key-Value Paare eingetragen werden,
+     * Die Methode erzeugt aus m1 und m2 eine neue Map, in der alle Key-Value Paare eingetragen werden,
      * - die in m1 und m2 gleich sind oder
      * - deren Key nur m1 oder nur im m2 vorkommt.
      *
@@ -40,13 +57,29 @@ public class MapUtils {
      * @param m2
      * @return
      */
-    public static Map<Integer,Integer> union(Map<Integer,Integer> m1, Map<Integer,Integer> m2) {
-        //TODO
-        return null;
+    public static Map<Integer, Integer> union(Map<Integer, Integer> m1, Map<Integer, Integer> m2) {
+        Map<Integer, Integer> ergebnis = new HashMap<>();
+
+        for (Integer schluessel1 : m1.keySet()) {
+            Integer wert1 = m1.get(schluessel1);
+            if (!m2.containsKey(schluessel1)) {
+                ergebnis.put(schluessel1, wert1);
+            }
+            for (Integer schluessel2 : m2.keySet()) {
+                Integer wert2 = m2.get(schluessel2);
+                if (schluessel1 == schluessel2 && wert1 == wert2) {
+                    ergebnis.put(schluessel1, wert1);
+                }
+                if (!m1.containsKey(schluessel2)) {
+                    ergebnis.put(schluessel2, wert2);
+                }
+            }
+        }
+        return ergebnis;
     }
 
     /**
-     *Die Methode erzeugt aus m1 und m2 eine neue Map, in der alle Keys enthalten sind, die in m1 und m2 gleich sind.
+     * Die Methode erzeugt aus m1 und m2 eine neue Map, in der alle Keys enthalten sind, die in m1 und m2 gleich sind.
      * Die Werte (ggf. unterschiedliche in m1 und m2) zu gleichen Keys werden in einer Menge gesammelt.
      * Für Keys, die nur m1 oder m2 vorkommen, ist der Wert der Ergebnis-Map eine Menge mit einem Element.
      *
@@ -54,9 +87,27 @@ public class MapUtils {
      * @param m2
      * @return
      */
-    public static Map<Integer,Set<Integer>> unionJoinValues(Map<Integer,Integer> m1, Map<Integer,Integer> m2) {
-        //TODO
-        return null;
+    public static Map<Integer, Set<Integer>> unionJoinValues(Map<Integer, Integer> m1, Map<Integer, Integer> m2) {
+        Map<Integer, Set<Integer>> ergebnis = new HashMap<>();
+        for (Integer schluessel1 : m1.keySet()) {
+            Integer wert1 = m1.get(schluessel1);
+            if (!m2.containsKey(schluessel1)) {
+                ergebnis.put(schluessel1, new HashSet<>(Arrays.asList(wert1)));
+            }
+            for (Integer schluessel2 : m2.keySet()) {
+                Integer wert2 = m2.get(schluessel2);
+                if (schluessel1 == schluessel2) {
+                    ergebnis.put(schluessel1, new HashSet<>(Arrays.asList(wert1)));
+                    if (wert1 != wert2) {
+                        ergebnis.get(schluessel1).add(wert2);
+                    }
+                }
+                if (!m1.containsKey(schluessel2)) {
+                    ergebnis.put(schluessel2, new HashSet<>(Arrays.asList(wert2)));
+                }
+            }
+        }
+        return ergebnis;
     }
 
     /**
@@ -69,9 +120,19 @@ public class MapUtils {
      * @return
      */
     // m1-m2 Differenz
-    public static Map<Integer,Integer> complement(Map<Integer,Integer> m1, Map<Integer,Integer> m2) {
-        //TODO
-        return null;
+    public static Map<Integer, Integer> complement(Map<Integer, Integer> m1, Map<Integer, Integer> m2) {
+        Map<Integer, Integer> ergebnis = m1;
+
+        for (Integer schluessel1 : m1.keySet()) {
+            Integer wert1 = m1.get(schluessel1);
+            for (Integer schluessel2 : m2.keySet()) {
+                Integer wert2 = m2.get(schluessel2);
+                if (schluessel1 == schluessel2 && wert1 == wert2) {
+                    ergebnis.remove(schluessel1);
+                }
+            }
+        }
+        return ergebnis;
     }
 
     /**
@@ -82,9 +143,18 @@ public class MapUtils {
      * @param m2
      * @return
      */
-    public static boolean isSubMap(Map<Integer,Integer> m1, Map<Integer,Integer> m2) {
-        //TODO
-        return false;
+    public static boolean isSubMap(Map<Integer, Integer> m1, Map<Integer, Integer> m2) {
+        boolean istSubMap = true;
+        for (Integer schluessel1 : m1.keySet()) {
+            Integer wert1 = m1.get(schluessel1);
+            if (!m2.containsKey(schluessel1)){
+                return false;
+            }
+            if (m2.get(schluessel1) != wert1){
+                return false;
+            }
+        }
+        return istSubMap;
     }
 
 }
