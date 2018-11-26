@@ -1,10 +1,9 @@
 package de.hawhh.informatik.kasse;
 
 import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.StreamSupport;
+
 // TODO Iterierbar machen
-public class Kasse  {
+public class Kasse implements Iterable<Position> {
 
     private final String name;
     private final List<Rechnung> rechnungen;
@@ -98,5 +97,28 @@ public class Kasse  {
                 '}';
     }
 
+
+    @Override
+    public Iterator<Rechnung> iterator() {
+        return new IteratorRechnung<>();
+    }
+
+    private class IteratorRechnung implements Iterator<Rechnung> {
+
+        @Override
+        public boolean hasNext() {
+            return false;
+        }
+
+        @Override
+        public Rechnung next() {
+            return null;
+        }
+
+        @Override
+        public void remove() {
+
+        }
+    }
 
 }

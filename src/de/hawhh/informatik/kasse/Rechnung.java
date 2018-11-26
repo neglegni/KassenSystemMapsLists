@@ -3,10 +3,11 @@ package de.hawhh.informatik.kasse;
 import java.util.*;
 
 // TODO Iterierbar machen
-public class Rechnung implements Iterable<Rechnung> {
+public class Rechnung implements Iterable<Position> {
 
     private final String nr;
     private final List<Position> positionen;
+
 
     public Rechnung(String nr){
         this.nr = nr;
@@ -34,10 +35,6 @@ public class Rechnung implements Iterable<Rechnung> {
                 ']';
     }
 
-    @Override
-    public Iterator<Rechnung> iterator() {
-        return null;
-    }
 
     /**
      * Nur Methoden des Java-Streamen API nutzen.
@@ -46,4 +43,39 @@ public class Rechnung implements Iterable<Rechnung> {
         return gesamtwert;
     }*/
 
+    @Override
+    public Iterator<Position> iterator() {
+        return new MyIterator<>();
+    }
+
+    private class MyIterator<R> implements Iterator<Position> {
+
+        // die nächste zu lesende Position.
+        private int readCursor = 0;
+        // Indikator für das lesen mit next().
+        private boolean nextGiven = false;
+
+
+        @Override
+        public boolean hasNext() {
+            return readCursor < positionen.size();
+        }
+
+        //liefert das nächste element und setzt nextGiven auf true.
+        //sodass ein gültiger Zustand für das potentielle Löschen erreicht ist.
+        @Override
+        public Position next() {
+            if (!hasNext()) throw new NoSuchElementException();
+            nextGiven = true;
+            return positionen.get(readCursor++);
+        }
+
+        public void remove() {
+            if (!nextGiven) throw new IllegalStateException("kein nächstes Element");
+            //--, da der readCursor hinter dem letzten gelesenen ELem steht.
+            positionen.remove(--readCursor);
+            //letztes gelesenes ELement wurde gelöscht. nextGiven wird zurückgesetzt
+            nextGiven = false;
+        }
+    }
 }

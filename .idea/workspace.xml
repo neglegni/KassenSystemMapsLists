@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="ca65c0de-58d2-4bd9-b102-da62af4f1668" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/de/hawhh/informatik/kasse/KasseLeser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/hawhh/informatik/kasse/KasseLeser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/de/hawhh/informatik/listen/VerketteteListe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/hawhh/informatik/listen/VerketteteListe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A3-WS1819/de/hawhh/informatik/kasse/KasseLeser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3-WS1819/de/hawhh/informatik/kasse/KasseLeser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A3-WS1819/de/hawhh/informatik/listen/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3-WS1819/de/hawhh/informatik/listen/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A3-WS1819/de/hawhh/informatik/listen/VerketteteListe.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3-WS1819/de/hawhh/informatik/listen/VerketteteListe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A3-WS1819/de/hawhh/informatik/maps/MapUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3-WS1819/de/hawhh/informatik/maps/MapUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/hawhh/informatik/kasse/Kasse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/hawhh/informatik/kasse/Kasse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/hawhh/informatik/kasse/Rechnung.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/hawhh/informatik/kasse/Rechnung.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,27 +66,27 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3929" />
+          <entry key="java" value="5223" />
           <entry key="regexp" value="19" />
-          <entry key="txt" value="35" />
+          <entry key="txt" value="63" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3929" />
-          <entry key="PLAIN_TEXT" value="35" />
+          <entry key="JAVA" value="5223" />
+          <entry key="PLAIN_TEXT" value="63" />
           <entry key="RegExp" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="8" />
+          <entry key="java" value="10" />
           <entry key="sv" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="8" />
+          <entry key="JAVA" value="10" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
@@ -114,9 +118,26 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/de/hawhh/informatik/kasse/Kasse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="104" lean-forward="true" selection-start-line="104" selection-end-line="104" />
+              <folding>
+                <element signature="e#2478#2479#0" expanded="true" />
+                <element signature="e#2517#2518#0" expanded="true" />
+                <element signature="e#2650#2651#0" expanded="true" />
+                <element signature="e#2686#2687#0" expanded="true" />
+                <element signature="e#2738#2739#0" expanded="true" />
+                <element signature="e#2773#2774#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/de/hawhh/informatik/kasse/KasseLeser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
+            <state relative-caret-position="525">
               <caret line="52" column="120" selection-start-line="52" selection-start-column="120" selection-end-line="52" selection-end-column="120" />
             </state>
           </provider>
@@ -134,8 +155,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/de/hawhh/informatik/kasse/Position.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -152,8 +173,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/de/hawhh/informatik/kasse/Rechnung.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="38" column="6" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
+            <state relative-caret-position="60">
+              <caret line="47" column="8" lean-forward="true" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
+              <folding>
+                <element signature="e#883#884#0" expanded="true" />
+                <element signature="e#922#923#0" expanded="true" />
+                <element signature="e#1267#1268#0" expanded="true" />
+                <element signature="e#1307#1308#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Iterable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="197">
+              <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -188,12 +224,13 @@
         <option value="$PROJECT_DIR$/src/src/tests/MapUtilityTest.java" />
         <option value="$PROJECT_DIR$/src/tests/MapUtilityTest.java" />
         <option value="$PROJECT_DIR$/A3-WS1819.iml" />
-        <option value="$PROJECT_DIR$/src/de/hawhh/informatik/kasse/Kasse.java" />
-        <option value="$PROJECT_DIR$/src/de/hawhh/informatik/kasse/Rechnung.java" />
         <option value="$PROJECT_DIR$/src/de/hawhh/informatik/kasse/KasseClient.java" />
         <option value="$PROJECT_DIR$/src/de/hawhh/informatik/maps/MapUtils.java" />
         <option value="$PROJECT_DIR$/src/de/hawhh/informatik/listen/VerketteteListe.java" />
         <option value="$PROJECT_DIR$/src/de/hawhh/informatik/kasse/KasseLeser.java" />
+        <option value="$PROJECT_DIR$/src/de/hawhh/informatik/kasse/Position.java" />
+        <option value="$PROJECT_DIR$/src/de/hawhh/informatik/kasse/Rechnung.java" />
+        <option value="$PROJECT_DIR$/src/de/hawhh/informatik/kasse/Kasse.java" />
       </list>
     </option>
   </component>
@@ -302,7 +339,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543245482289" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543250271297" />
     <property name="last.edited.regexp" value="ababab :a b|| : ava aba b" />
     <property name="last_opened_file_path" value="$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -401,7 +438,7 @@
       <workItem from="1543234303671" duration="712000" />
       <workItem from="1543235026226" duration="1457000" />
       <workItem from="1543236494114" duration="104000" />
-      <workItem from="1543236603604" duration="7921000" />
+      <workItem from="1543236603604" duration="12407000" />
     </task>
     <task id="LOCAL-00001" summary="VerketteListeAbgabee">
       <created>1543232290951</created>
@@ -417,7 +454,14 @@
       <option name="project" value="LOCAL" />
       <updated>1543239014840</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="TeilCKasseLeserAbgabefertig">
+      <created>1543245577795</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1543245577795</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -453,14 +497,14 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22506000" />
+    <option name="totallyTimeSpent" value="26992000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4990991" visible="true" weight="0.22213247" />
-      <window_info id="Structure" order="1" sideWeight="0.5009009" side_tool="true" visible="true" weight="0.22213247" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4984375" visible="true" weight="0.22213247" />
+      <window_info id="Structure" order="1" sideWeight="0.5015625" side_tool="true" visible="true" weight="0.22213247" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -468,14 +512,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23972602" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23972602" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.12328767" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.12328767" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Dependency Viewer" order="11" weight="0.3286119" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32739726" />
@@ -529,7 +573,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="VerketteListeAbgabee" />
     <MESSAGE value="TeilBAbgabe" />
-    <option name="LAST_COMMIT_MESSAGE" value="TeilBAbgabe" />
+    <MESSAGE value="TeilCKasseLeserAbgabefertig" />
+    <option name="LAST_COMMIT_MESSAGE" value="TeilCKasseLeserAbgabefertig" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/src/tests/ListeTest.java" />
@@ -550,13 +595,6 @@
             <element signature="e#10225#10226#0" expanded="true" />
             <element signature="e#10308#10309#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/hawhh/informatik/kasse/Kasse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -629,27 +667,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/hawhh/informatik/kasse/KasseClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/hawhh/informatik/kasse/Position.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/hawhh/informatik/kasse/Rechnung.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="38" column="6" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/out/production/A3-WS1819/rechnungen.sv">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -659,8 +676,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/de/hawhh/informatik/kasse/KasseLeser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
+        <state relative-caret-position="525">
           <caret line="52" column="120" selection-start-line="52" selection-start-column="120" selection-end-line="52" selection-end-column="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/hawhh/informatik/kasse/KasseClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/hawhh/informatik/kasse/Position.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Iterable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/hawhh/informatik/kasse/Rechnung.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="47" column="8" lean-forward="true" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
+          <folding>
+            <element signature="e#883#884#0" expanded="true" />
+            <element signature="e#922#923#0" expanded="true" />
+            <element signature="e#1267#1268#0" expanded="true" />
+            <element signature="e#1307#1308#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/hawhh/informatik/kasse/Kasse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="104" lean-forward="true" selection-start-line="104" selection-end-line="104" />
+          <folding>
+            <element signature="e#2478#2479#0" expanded="true" />
+            <element signature="e#2517#2518#0" expanded="true" />
+            <element signature="e#2650#2651#0" expanded="true" />
+            <element signature="e#2686#2687#0" expanded="true" />
+            <element signature="e#2738#2739#0" expanded="true" />
+            <element signature="e#2773#2774#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
