@@ -18,11 +18,11 @@ public class KasseClient {
         System.out.println("\nKASSE UND RECHNUNGEN\n");
         System.out.println(kasse.getName());
         //  TODO Fehler da Kasse und Rechnung noch nicht iterierbar sind
-       /** for (Rechnung rechnung : kasse){
+        for (Rechnung rechnung : kasse){
             for(Position p : rechnung) {
                 System.out.println(p);
             }
-        }*/
+        }
 
         System.out.println("\nHOECHSTE RECHNUNG\n");
         System.out.println(kasse.hoechsteRechnung());

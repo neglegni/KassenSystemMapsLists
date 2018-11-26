@@ -2,8 +2,7 @@ package de.hawhh.informatik.kasse;
 
 import java.util.*;
 
-// TODO Iterierbar machen
-public class Kasse implements Iterable<Position> {
+public class Kasse implements Iterable<Rechnung> {
 
     private final String name;
     private final List<Rechnung> rechnungen;
@@ -100,24 +99,35 @@ public class Kasse implements Iterable<Position> {
 
     @Override
     public Iterator<Rechnung> iterator() {
-        return new IteratorRechnung<>();
+        return new IteratorRechnung();
     }
 
     private class IteratorRechnung implements Iterator<Rechnung> {
 
+        // die nächste zu lesende Position.
+        private int readCursor = 0;
+        // Indikator für das lesen mit next().
+        private boolean nextGiven = false;
+
         @Override
         public boolean hasNext() {
-            return false;
+            return readCursor<rechnungen.size();
         }
 
         @Override
         public Rechnung next() {
-            return null;
+            if (!hasNext()) throw new NoSuchElementException();
+            nextGiven = true;
+            return rechnungen.get(readCursor++);
         }
 
         @Override
         public void remove() {
-
+            if (!nextGiven) throw new IllegalStateException("kein nächstes Element");
+            //--, da der readCursor hinter dem letzten gelesenen ELem steht.
+            rechnungen.remove(--readCursor);
+            //letztes gelesenes ELement wurde gelöscht. nextGiven wird zurückgesetzt
+            nextGiven = false;
         }
     }
 

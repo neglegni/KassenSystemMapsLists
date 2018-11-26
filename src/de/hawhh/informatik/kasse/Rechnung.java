@@ -45,10 +45,10 @@ public class Rechnung implements Iterable<Position> {
 
     @Override
     public Iterator<Position> iterator() {
-        return new MyIterator<>();
+        return new MyIterator();
     }
 
-    private class MyIterator<R> implements Iterator<Position> {
+    private class MyIterator implements Iterator<Position> {
 
         // die nächste zu lesende Position.
         private int readCursor = 0;

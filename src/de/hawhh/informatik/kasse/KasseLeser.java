@@ -28,7 +28,6 @@ public class KasseLeser {
         Scanner sc = new Scanner(new URL(uri).openStream(), StandardCharsets.UTF_8);
         Kasse kasse = new Kasse("Ristorante Nero");
 
-        // TODO Rechnungen einlesen
         /**
          * Scanner: Rechnungen Zeilenweise verarbeiten */
         String zeile;
