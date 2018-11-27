@@ -59,7 +59,11 @@ public class MapUtils {
      */
     public static Map<Integer, Integer> union(Map<Integer, Integer> m1, Map<Integer, Integer> m2) {
         Map<Integer, Integer> ergebnis = new HashMap<>();
-
+        if (m1.isEmpty()){
+            ergebnis=m2;
+        } else if (m2.isEmpty()){
+            ergebnis=m1;
+        }
         for (Integer schluessel1 : m1.keySet()) {
             Integer wert1 = m1.get(schluessel1);
             if (!m2.containsKey(schluessel1)) {
@@ -88,37 +92,33 @@ public class MapUtils {
      * @return
      */
     public static Map<Integer, Set<Integer>> unionJoinValues(Map<Integer, Integer> m1, Map<Integer, Integer> m2) {
-        Map<Integer, Set<Integer>> ergebnis = new HashMap<>();
-
-        //Sonderfall m1 ist leer.
+        Map<Integer, Set<Integer>> ergebnis = new HashMap<Integer, Set<Integer>>();
         if (m1.isEmpty()){
             for (Integer schluessel2 : m2.keySet()){
-                ergebnis.put(schluessel2, new HashSet<>(Arrays.asList(m2.get(schluessel2))));
+                ergebnis.put(schluessel2,new HashSet<>(Arrays.asList(m2.get(schluessel2))));
             }
-            //Sonderfall m2 ist leer.
         } else if (m2.isEmpty()){
             for (Integer schluessel1 : m1.keySet()){
-                ergebnis.put(schluessel1, new HashSet<>(Arrays.asList(m1.get(schluessel1))));
+                ergebnis.put(schluessel1, new HashSet<>(Arrays.asList(m2.get(schluessel1))));
             }
-        } else {
-            for (Integer schluessel1 : m1.keySet()) {
-                Integer wert1 = m1.get(schluessel1);
-                if (!m2.containsKey(schluessel1)) {
+        }
+        for (Integer schluessel1 : m1.keySet()) {
+            Integer wert1 = m1.get(schluessel1);
+            if (!m2.containsKey(schluessel1)) {
+                ergebnis.put(schluessel1, new HashSet<>(Arrays.asList(wert1)));
+            }
+            for (Integer schluessel2 : m2.keySet()) {
+                Integer wert2 = m2.get(schluessel2);
+                if (schluessel1 == schluessel2) {
                     ergebnis.put(schluessel1, new HashSet<>(Arrays.asList(wert1)));
+                    if (wert1 != wert2) {
+                        ergebnis.get(schluessel1).add(wert2);
+                    }
                 }
-                for (Integer schluessel2 : m2.keySet()) {
-                    Integer wert2 = m2.get(schluessel2);
-                    if (schluessel1 == schluessel2) {
-                        ergebnis.put(schluessel1, new HashSet<>(Arrays.asList(wert1)));
-            if (wert1 != wert2) {
-                ergebnis.get(schluessel1).add(wert2);
+                if (!m1.containsKey(schluessel2)) {
+                    ergebnis.put(schluessel2, new HashSet<>(Arrays.asList(wert2)));
+                }
             }
-        }
-        if (!m1.containsKey(schluessel2)) {
-            ergebnis.put(schluessel2, new HashSet<>(Arrays.asList(wert2)));
-        }
-    }
-}
         }
         return ergebnis;
     }
@@ -134,11 +134,11 @@ public class MapUtils {
      */
     // m1-m2 Differenz
     public static Map<Integer, Integer> complement(Map<Integer, Integer> m1, Map<Integer, Integer> m2) {
-        Map<Integer, Integer> ergebnis = new HashMap<Integer, Integer>();
+        Map<Integer, Integer> ergebnis = new HashMap<>();
 
         for (Integer schluessel1 : m1.keySet()) {
             Integer wert1 = m1.get(schluessel1);
-            ergebnis.put(schluessel1, wert1);
+            ergebnis.put(schluessel1,wert1);
             for (Integer schluessel2 : m2.keySet()) {
                 Integer wert2 = m2.get(schluessel2);
                 if (schluessel1 == schluessel2 && wert1 == wert2) {
