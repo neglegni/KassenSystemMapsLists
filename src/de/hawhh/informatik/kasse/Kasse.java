@@ -1,6 +1,7 @@
 package de.hawhh.informatik.kasse;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class Kasse implements Iterable<Rechnung> {
 
@@ -24,26 +25,40 @@ public class Kasse implements Iterable<Rechnung> {
      * @return Rechnung größter betrag
      */
     public Rechnung hoechsteRechnung() {
-        // TODO
-        return null;
+        return rechnungen.stream().max(Comparator.comparing(Rechnung::betrag)).orElse(null);
     }
 
     /**
      * @return Summe aller Rechnungen
      */
     public int kassenStand() {
-        // TODO
-        return -1;
+        int kassenStand = 0;
+        for (Rechnung rechnung : rechnungen) {
+            kassenStand = kassenStand + rechnung.betrag();
+        }
+        return kassenStand;
+        // return rechnungen.stream().mapToInt(Rechnung::betrag).sum();
     }
 
     /**
      * erzeugt eine Tabelle deren Schlüssen die  Positionen und deren Werte Liste von Rechnungen sind.
-     * Streaming API und foreach-Konstrukt um über POsitionen zu iterieren nutzen.
+     * Streaming API und foreach-Konstrukt um über Positionen zu iterieren nutzen.
      * @return
      */
     public Map<Position, List<Rechnung>> gruppiereNachProdukt() {
-        // TODO
-        return null;
+        Map<Position, List<Rechnung>> ergebnis = new HashMap<>();
+        rechnungen.forEach(rechnung ->
+                rechnung.forEach(position -> {
+                    // es wird eine neue Rechnungs Liste erzeugt und unserer HashMap gibt in jedem Fall eine leere
+                    // ArrayList aus auch wenn die position nicht gefunden wurde
+                    List<Rechnung> listeRechnungen = ergebnis.getOrDefault(position, new ArrayList<>());
+                    //positionen werden der rechnung hinzugefügt
+                    listeRechnungen.add(rechnung);
+                    //zu jeder position erhalten wir die liste der Rechnungen
+                    ergebnis.put(position, listeRechnungen);
+                })
+        );
+        return ergebnis;
     }
 
     /**
@@ -53,8 +68,13 @@ public class Kasse implements Iterable<Rechnung> {
      * @return
      */
     public Map<Position, List<String>> gruppiereNachProduktNurRechnungsNummern() {
-        // TODO
-        return null;
+        Map<Position, List<String>> ergebnisRnr = this.gruppiereNachProdukt()
+                .entrySet()
+                .stream()
+                .collect(Collectors.toMap(
+                        Map.Entry::getKey,
+                        entry -> entry.getValue().stream().map(Rechnung::getNr).collect(Collectors.toList())));
+        return ergebnisRnr;
     }
 
     /**
@@ -65,8 +85,13 @@ public class Kasse implements Iterable<Rechnung> {
      *
      */
     public Position beliebtestesProdukt() {
-        // TODO
-        return null;
+        Position ergebnisProd = this.gruppiereNachProdukt()
+                .entrySet()
+                .stream()
+                .max(Comparator.comparingInt(entry -> entry.getValue().size()))
+                .get()
+                .getKey();
+        return ergebnisProd;
     }
 
     /**
@@ -74,8 +99,13 @@ public class Kasse implements Iterable<Rechnung> {
      * @return am häufigsten bestellt
      */
     public List<Position> beliebtesteProdukte() {
-      // TODO
-      return null;
+        List<Position> ergebnisProd = this.gruppiereNachProdukt()
+                .entrySet()
+                .stream()
+                .sorted(Comparator.comparingInt(entry -> entry.getValue().size()))
+                .map(Map.Entry::getKey)
+                .collect(Collectors.toList());
+        return ergebnisProd;
     }
 
     /**
@@ -84,8 +114,13 @@ public class Kasse implements Iterable<Rechnung> {
      * @return
      */
     public Map<Position,Integer> produktHaeufigkeiten(){
-      // TODO
-        return null;
+        Map<Position, Integer> ergebnisProdHauef = this.gruppiereNachProdukt()
+                .entrySet()
+                .stream()
+                .collect(Collectors.toMap(
+                        Map.Entry::getKey,
+                        entry -> entry.getValue().size()));
+        return ergebnisProdHauef;
     }
 
     @Override
@@ -95,7 +130,6 @@ public class Kasse implements Iterable<Rechnung> {
                 ", rechnungen=" + rechnungen +
                 '}';
     }
-
 
     @Override
     public Iterator<Rechnung> iterator() {

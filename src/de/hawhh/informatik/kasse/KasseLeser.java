@@ -21,7 +21,7 @@ public class KasseLeser {
 
     private String uri;
     public KasseLeser(String uriAsString){
-            this.uri = uriAsString;
+        this.uri = uriAsString;
     }
 
     public Kasse leseKasse() throws IOException {
@@ -60,6 +60,7 @@ public class KasseLeser {
         // schließe scanner
         sc.close();
         // gib kasse zurück
+        System.out.println(kasse);
         return kasse;
     }
 

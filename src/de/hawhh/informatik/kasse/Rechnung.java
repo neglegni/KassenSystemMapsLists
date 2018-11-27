@@ -22,10 +22,6 @@ public class Rechnung implements Iterable<Position> {
         this.positionen.add(pos);
     }
 
-    //public int betrag(){
-        // TODO
-     //   return -1;
-   // }
 
     @Override
     public String toString() {
@@ -35,13 +31,13 @@ public class Rechnung implements Iterable<Position> {
                 ']';
     }
 
-
-    /**
-     * Nur Methoden des Java-Streamen API nutzen.
-     *
     public int betrag(){
-        return gesamtwert;
-    }*/
+        int betrag = 0;
+        for(Position pos : positionen){
+            betrag = betrag + pos.getPreis();
+        }
+        return betrag;
+    }
 
     @Override
     public Iterator<Position> iterator() {
