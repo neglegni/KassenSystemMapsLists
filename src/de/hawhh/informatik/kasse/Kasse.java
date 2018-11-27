@@ -25,19 +25,23 @@ public class Kasse implements Iterable<Rechnung> {
      * @return Rechnung größter betrag
      */
     public Rechnung hoechsteRechnung() {
-        return rechnungen.stream().max(Comparator.comparing(Rechnung::betrag)).orElse(null);
+        Rechnung ergebnis = rechnungen.stream().max(Comparator.comparing(Rechnung::betrag)).orElse(null);
+        return ergebnis;
     }
 
     /**
      * @return Summe aller Rechnungen
      */
     public int kassenStand() {
+        /**
         int kassenStand = 0;
         for (Rechnung rechnung : rechnungen) {
             kassenStand = kassenStand + rechnung.betrag();
         }
         return kassenStand;
-        // return rechnungen.stream().mapToInt(Rechnung::betrag).sum();
+         **/
+        int erg = rechnungen.stream().mapToInt(Rechnung::betrag).sum();
+        return erg;
     }
 
     /**

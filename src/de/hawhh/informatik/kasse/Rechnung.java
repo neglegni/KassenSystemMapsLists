@@ -32,11 +32,15 @@ public class Rechnung implements Iterable<Position> {
     }
 
     public int betrag(){
+        /**
         int betrag = 0;
         for(Position pos : positionen){
             betrag = betrag + pos.getPreis();
         }
         return betrag;
+         **/
+        int erg = positionen.stream().mapToInt(Position::getPreis).sum();
+        return erg;
     }
 
     @Override
