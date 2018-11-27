@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ca65c0de-58d2-4bd9-b102-da62af4f1668" name="Default Changelist" comment="">
+    <list default="true" id="ca65c0de-58d2-4bd9-b102-da62af4f1668" name="Default Changelist" comment="Map --&gt; Tests funktionieren">
       <change beforePath="$PROJECT_DIR$/out/production/A3-WS1819/de/hawhh/informatik/maps/MapUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/A3-WS1819/de/hawhh/informatik/maps/MapUtils.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -376,7 +376,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543324389944" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543324995151" />
     <property name="last.edited.regexp" value="ababab :a b|| : ava aba b" />
     <property name="last_opened_file_path" value="$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -496,7 +496,7 @@
       <workItem from="1543236494114" duration="104000" />
       <workItem from="1543236603604" duration="14129000" />
       <workItem from="1543319780087" duration="2804000" />
-      <workItem from="1543323539580" duration="945000" />
+      <workItem from="1543323539580" duration="1244000" />
     </task>
     <task id="LOCAL-00001" summary="VerketteListeAbgabee">
       <created>1543232290951</created>
@@ -576,7 +576,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40713000" />
+    <option name="totallyTimeSpent" value="41012000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
@@ -590,14 +590,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.42996454" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.42996454" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32978722" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32180852" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32180852" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Dependency Viewer" order="11" weight="0.3286119" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32712767" />
