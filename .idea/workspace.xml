@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca65c0de-58d2-4bd9-b102-da62af4f1668" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/de/hawhh/informatik/kasse/Kasse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/hawhh/informatik/kasse/Kasse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/de/hawhh/informatik/kasse/Rechnung.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/hawhh/informatik/kasse/Rechnung.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A3-WS1819/de/hawhh/informatik/kasse/Kasse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A3-WS1819/de/hawhh/informatik/kasse/KasseClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A3-WS1819/de/hawhh/informatik/kasse/KasseLeser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A3-WS1819/de/hawhh/informatik/kasse/Position.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A3-WS1819/de/hawhh/informatik/kasse/Rechnung.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A3-WS1819/de/hawhh/informatik/listen/Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A3-WS1819/de/hawhh/informatik/listen/VerketteteListe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/A3-WS1819/de/hawhh/informatik/maps/MapUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/A3-WS1819/MapUtilityTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/A3-WS1819/MapUtilityTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/hawhh/informatik/maps/MapUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/hawhh/informatik/maps/MapUtils.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,6 +21,10 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="hideWarnings" value="true" />
+    <option name="HIDE_WARNINGS" value="true" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="431222238">
@@ -111,13 +124,41 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="408669422">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="261" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="261" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/de/hawhh/informatik/listen/VerketteteListe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="136">
               <caret line="11" column="25" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="25" />
               <folding>
                 <element signature="docComment;method#VerketteteListe#1;class#VerketteteListe#0" />
@@ -140,33 +181,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/de/hawhh/informatik/kasse/Kasse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+            <state relative-caret-position="266">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#324#325#0" expanded="true" />
-                <element signature="e#351#352#0" expanded="true" />
-                <element signature="e#393#394#0" expanded="true" />
-                <element signature="e#438#439#0" expanded="true" />
-                <element signature="e#4640#4641#0" expanded="true" />
-                <element signature="e#4685#4686#0" expanded="true" />
-                <element signature="e#2805#2806#0" expanded="true" />
-                <element signature="e#2864#2865#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/de/hawhh/informatik/kasse/KasseLeser.java">
+        <entry file="file://$PROJECT_DIR$/src/de/hawhh/informatik/maps/MapUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="62" column="32" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
+            <state relative-caret-position="-91">
+              <caret line="133" column="7" lean-forward="true" selection-start-line="133" selection-start-column="7" selection-end-line="133" selection-end-column="7" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#582#583#0" expanded="true" />
-                <element signature="e#620#621#0" expanded="true" />
+                <element signature="e#5089#5107#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/tests/MapUtilityTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="142">
+              <caret line="132" lean-forward="true" selection-start-line="132" selection-end-line="132" />
             </state>
           </provider>
         </entry>
@@ -174,8 +214,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/de/hawhh/informatik/kasse/Position.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+            <state relative-caret-position="187">
+              <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
               <folding>
                 <element signature="e#177#178#0" expanded="true" />
                 <element signature="e#204#205#0" expanded="true" />
@@ -186,20 +226,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/de/hawhh/informatik/kasse/Rechnung.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="42" column="19" lean-forward="true" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
+            <state relative-caret-position="380">
+              <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
               <folding>
                 <element signature="e#354#355#0" expanded="true" />
                 <element signature="e#379#380#0" expanded="true" />
                 <element signature="e#416#417#0" expanded="true" />
                 <element signature="e#456#457#0" expanded="true" />
-                <element signature="e#958#959#0" expanded="true" />
-                <element signature="e#997#998#0" expanded="true" />
-                <element signature="e#1285#1286#0" expanded="true" />
-                <element signature="e#1346#1347#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -226,18 +262,24 @@
         <option value="$PROJECT_DIR$/src/src/tests/MapUtilityTest.java" />
         <option value="$PROJECT_DIR$/src/tests/MapUtilityTest.java" />
         <option value="$PROJECT_DIR$/A3-WS1819.iml" />
-        <option value="$PROJECT_DIR$/src/de/hawhh/informatik/maps/MapUtils.java" />
         <option value="$PROJECT_DIR$/src/de/hawhh/informatik/listen/VerketteteListe.java" />
         <option value="$PROJECT_DIR$/src/de/hawhh/informatik/kasse/KasseClient.java" />
         <option value="$PROJECT_DIR$/src/de/hawhh/informatik/kasse/Position.java" />
         <option value="$PROJECT_DIR$/src/de/hawhh/informatik/kasse/KasseLeser.java" />
         <option value="$PROJECT_DIR$/src/de/hawhh/informatik/kasse/Kasse.java" />
         <option value="$PROJECT_DIR$/src/de/hawhh/informatik/kasse/Rechnung.java" />
+        <option value="$PROJECT_DIR$/src/de/hawhh/informatik/maps/MapUtils.java" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
@@ -248,177 +290,106 @@
     <option name="width" value="980" />
     <option name="height" value="710" />
   </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Android</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="pmpa3a2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pmpa3a2" type="462c0819:PsiDirectoryNode" />
+              <item name="pmpa3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pmpa3" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="pmpa3a2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pmpa3a2" type="462c0819:PsiDirectoryNode" />
+              <item name="pmpa3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pmpa3" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="pmpa3a2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pmpa3a2" type="462c0819:PsiDirectoryNode" />
+              <item name="pmpa3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pmpa3" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="informatik" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="pmpa3a2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pmpa3a2" type="462c0819:PsiDirectoryNode" />
+              <item name="pmpa3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pmpa3" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="informatik" type="462c0819:PsiDirectoryNode" />
               <item name="kasse" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pmpa3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pmpa3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="informatik" type="462c0819:PsiDirectoryNode" />
+              <item name="listen" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pmpa3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pmpa3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="informatik" type="462c0819:PsiDirectoryNode" />
+              <item name="listen" type="462c0819:PsiDirectoryNode" />
+              <item name="VerketteteListe.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="pmpa3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pmpa3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="informatik" type="462c0819:PsiDirectoryNode" />
+              <item name="maps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pmpa3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pmpa3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543315302938" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543322435845" />
     <property name="last.edited.regexp" value="ababab :a b|| : ava aba b" />
     <property name="last_opened_file_path" value="$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="project.scopes" />
+    <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\birgit\Documents\HAW\vorlesungen\javaprp2\workspace\A3-WS1819" />
       <recent name="C:\Users\birgit\Documents\HAW\vorlesungen\javaprp2\workspace\A3-WS1819\src" />
     </key>
-  </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/de/hawhh/informatik/kasse/Kasse.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/de/hawhh/informatik/kasse/KasseClient.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/de/hawhh/informatik/kasse/KasseLeser.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/de/hawhh/informatik/kasse/Rechnung.java</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -432,7 +403,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Cucumber java.All Features in: src">
+  <component name="RunManager" selected="JUnit.MapUtilityTest (1)">
     <configuration name="KasseClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="de.hawhh.informatik.kasse.KasseClient" />
       <module name="A3-WS1819" />
@@ -495,9 +466,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MapUtilityTest (1)" />
         <item itemvalue="Cucumber java.All Features in: src" />
         <item itemvalue="Application.KasseClient" />
-        <item itemvalue="JUnit.MapUtilityTest (1)" />
         <item itemvalue="Application.VerketteteListe" />
         <item itemvalue="JUnit.MapUtilityTest" />
       </list>
@@ -523,6 +494,7 @@
       <workItem from="1543235026226" duration="1457000" />
       <workItem from="1543236494114" duration="104000" />
       <workItem from="1543236603604" duration="14129000" />
+      <workItem from="1543319780087" duration="2804000" />
     </task>
     <task id="LOCAL-00001" summary="VerketteListeAbgabee">
       <created>1543232290951</created>
@@ -563,21 +535,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MapUtilityTest - 2018.11.13 at 07h 43m 18s.xml">
-      <configuration name="MapUtilityTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MapUtilityTest_(1) - 2018.11.13 at 07h 44m 16s.xml">
-      <configuration name="MapUtilityTest (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MapUtilityTest_(1) - 2018.11.13 at 07h 45m 05s.xml">
-      <configuration name="MapUtilityTest (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MapUtilityTest_(1) - 2018.11.13 at 07h 46m 31s.xml">
-      <configuration name="MapUtilityTest (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MapUtilityTest_(1) - 2018.11.13 at 07h 54m 33s.xml">
-      <configuration name="MapUtilityTest (1)" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MapUtilityTest_(1) - 2018.11.13 at 07h 56m 39s.xml">
       <configuration name="MapUtilityTest (1)" configurationId="JUnit" />
     </history-entry>
@@ -593,15 +550,29 @@
     <history-entry file="All_Features_in__src - 2018.11.27 at 11h 30m 02s.xml">
       <configuration name="All Features in: src" configurationId="CucumberJavaRunConfigurationType" />
     </history-entry>
+    <history-entry file="All_Features_in__src - 2018.11.27 at 12h 57m 54s.xml">
+      <configuration name="All Features in: src" configurationId="CucumberJavaRunConfigurationType" />
+    </history-entry>
+    <history-entry file="MapUtilityTest_(1) - 2018.11.27 at 12h 58m 23s.xml">
+      <configuration name="MapUtilityTest (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MapUtilityTest_(1) - 2018.11.27 at 13h 08m 35s.xml">
+      <configuration name="MapUtilityTest (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MapUtilityTest_(1) - 2018.11.27 at 13h 10m 12s.xml">
+      <configuration name="MapUtilityTest (1)" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MapUtilityTest_(1) - 2018.11.27 at 13h 13m 09s.xml">
+      <configuration name="MapUtilityTest (1)" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36627000" />
+    <option name="totallyTimeSpent" value="39431000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8245192" visible="true" weight="0.04200323" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8245192" visible="true" weight="0.16257995" />
       <window_info id="Structure" order="1" sideWeight="0.17548077" side_tool="true" weight="0.04200323" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -610,17 +581,17 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.43013698" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.42996454" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3219178" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32180852" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Dependency Viewer" order="11" weight="0.3286119" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32739726" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32712767" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -677,6 +648,15 @@
     <MESSAGE value="Aufgabenteil C (4 a-g)" />
     <option name="LAST_COMMIT_MESSAGE" value="Aufgabenteil C (4 a-g)" />
   </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand>
+      <path>
+        <item name="pmpa3" type="b2602c69:ProjectViewProjectNode" />
+        <item name="pmpa3" type="462c0819:PsiDirectoryNode" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/src/tests/ListeTest.java" />
     <entry file="file://$PROJECT_DIR$/src/src/de/hawhh/informatik/listen/VerketteteListe.java" />
@@ -699,13 +679,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/hawhh/informatik/maps/MapUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="141" column="16" lean-forward="true" selection-start-line="141" selection-start-column="16" selection-end-line="141" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resource/rechnungen.sv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -717,13 +690,6 @@
       </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Iterable.java" />
-    <entry file="file://$PROJECT_DIR$/src/tests/MapUtilityTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="128" column="14" selection-start-line="128" selection-start-column="14" selection-end-line="128" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/de/hawhh/informatik/kasse/KasseClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
@@ -731,29 +697,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/aufgabe3/src/de/hawhh/informatik/kasse/Kasse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="81" column="13" lean-forward="true" selection-start-line="81" selection-start-column="13" selection-end-line="81" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/hawhh/informatik/kasse/Position.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
-          <folding>
-            <element signature="e#177#178#0" expanded="true" />
-            <element signature="e#204#205#0" expanded="true" />
-            <element signature="e#233#234#0" expanded="true" />
-            <element signature="e#261#262#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Downloads/aufgabe3/src/de/hawhh/informatik/kasse/Kasse.java" />
+    <entry file="file://$USER_HOME$/Downloads/aufgabe3/src/de/hawhh/informatik/kasse/Rechnung.java" />
     <entry file="file://$PROJECT_DIR$/src/de/hawhh/informatik/listen/VerketteteListe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="136">
           <caret line="11" column="25" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="25" />
           <folding>
             <element signature="docComment;method#VerketteteListe#1;class#VerketteteListe#0" />
@@ -772,16 +720,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/aufgabe3/src/de/hawhh/informatik/kasse/Rechnung.java">
+    <entry file="file://$PROJECT_DIR$/src/de/hawhh/informatik/kasse/Position.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="23" column="70" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="70" />
+        <state relative-caret-position="187">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+          <folding>
+            <element signature="e#177#178#0" expanded="true" />
+            <element signature="e#204#205#0" expanded="true" />
+            <element signature="e#233#234#0" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/hawhh/informatik/kasse/Rechnung.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
+          <folding>
+            <element signature="e#354#355#0" expanded="true" />
+            <element signature="e#379#380#0" expanded="true" />
+            <element signature="e#416#417#0" expanded="true" />
+            <element signature="e#456#457#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/hawhh/informatik/kasse/Kasse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/de/hawhh/informatik/maps/MapUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-91">
+          <caret line="133" column="7" lean-forward="true" selection-start-line="133" selection-start-column="7" selection-end-line="133" selection-end-column="7" />
+          <folding>
+            <element signature="e#5089#5107#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/de/hawhh/informatik/kasse/KasseLeser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
+        <state relative-caret-position="521">
           <caret line="62" column="32" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -791,44 +778,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/hawhh/informatik/kasse/Kasse.java">
+    <entry file="file://$PROJECT_DIR$/src/tests/MapUtilityTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#324#325#0" expanded="true" />
-            <element signature="e#351#352#0" expanded="true" />
-            <element signature="e#393#394#0" expanded="true" />
-            <element signature="e#438#439#0" expanded="true" />
-            <element signature="e#4640#4641#0" expanded="true" />
-            <element signature="e#4685#4686#0" expanded="true" />
-            <element signature="e#2805#2806#0" expanded="true" />
-            <element signature="e#2864#2865#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/hawhh/informatik/kasse/Rechnung.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="42" column="19" lean-forward="true" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
-          <folding>
-            <element signature="e#354#355#0" expanded="true" />
-            <element signature="e#379#380#0" expanded="true" />
-            <element signature="e#416#417#0" expanded="true" />
-            <element signature="e#456#457#0" expanded="true" />
-            <element signature="e#958#959#0" expanded="true" />
-            <element signature="e#997#998#0" expanded="true" />
-            <element signature="e#1285#1286#0" expanded="true" />
-            <element signature="e#1346#1347#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="142">
+          <caret line="132" lean-forward="true" selection-start-line="132" selection-end-line="132" />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArquillianSettingsConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
@@ -867,7 +837,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>10</last-edited>
+          <last-edited>11</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -884,6 +854,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
