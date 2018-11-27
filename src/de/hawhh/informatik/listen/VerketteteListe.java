@@ -22,16 +22,20 @@ public class VerketteteListe<E> extends AbstractList<E> {
      * @param coll
      */
     public VerketteteListe(Collection<? extends E> coll) {
-        this.asList((E[]) coll.toArray());
+        this();
+        for (E elem : coll) {
+            this.add(elem);
+        }
     }
 
     //  2 Pflichtmethoden
+
     /**
      * Returns the element at the specified position in this list.
      * Throws IndexOutOfBoundsException - if the index is out of range (index < 0 || index >= size())
      */
     @Override
-    public E get(int index) throws IllegalArgumentException {
+    public E get(int index) {
         if (index > 0 || index < size()) {
             Node<E> indexElement = head.getSucc();
             for (int i = 0; i < index; i++) {
@@ -39,7 +43,7 @@ public class VerketteteListe<E> extends AbstractList<E> {
             }
             return indexElement.getContent();
         }
-        return null;
+        throw new IndexOutOfBoundsException(index);
     }
 
     /**
@@ -65,10 +69,9 @@ public class VerketteteListe<E> extends AbstractList<E> {
      * UnsupportedOperationException - if the set operation is not supported by this list
      * ClassCastException - if the class of the specified element prevents it from being added to this list
      * NullPointerException - if the specified element is null and this list does not permit null elements
-     * IllegalArgumentException - if some property of the specified element prevents it from being added to this list
      * IndexOutOfBoundsException - if the index is out of range (index < 0 || index >= size())
      */
-    public E set​(int index, E element) throws IllegalArgumentException {
+    public E set​(int index, E element) {
         if (index > 0 || index < size()) {
             Node<E> indexElement = head.getSucc();
             for (int i = 0; i < index; i++) {
@@ -77,7 +80,7 @@ public class VerketteteListe<E> extends AbstractList<E> {
             indexElement.setContent(element);
             return indexElement.getContent();
         }
-        return null;
+        throw new IndexOutOfBoundsException(index);
     }
 
     /**
@@ -92,15 +95,11 @@ public class VerketteteListe<E> extends AbstractList<E> {
      *                                       IllegalArgumentException - if some property of the specified element prevents it from being added to this list
      *                                       IndexOutOfBoundsException - if the index is out of range (index < 0 || index > size())
      */
-    public void add​(int index, E element) throws IllegalArgumentException {
+    public void add​(int index, E element) {
 
         Node<E> neuesElement = new Node<E>(element);
         // Element ist erstes Element.
-        if (size() == 0) {
-            head.setSucc(neuesElement);
-            tail.setPred(neuesElement);
-            // neuesElement wird hinten angehängt.
-        } else if (index == size()) {
+        if (index == size()) {
             tail.getPred().setSucc(neuesElement);
             tail.setPred(neuesElement);
             // neuesElement soll in der Mitte eingehaengt werden .
@@ -116,7 +115,6 @@ public class VerketteteListe<E> extends AbstractList<E> {
         }
     }
 
-
     /**
      * Removes the element at the specified position in this list (optional operation). Shifts any subsequent elements to the left (subtracts one from their indices). Returns the element that was removed from the list.
      *
@@ -126,101 +124,75 @@ public class VerketteteListe<E> extends AbstractList<E> {
      *                                       IndexOutOfBoundsException - if the index is out of range (index < 0 || index >= size())
      */
     @SuppressWarnings("unchecked")
-    public E remove​(int index) throws IllegalArgumentException {
+    public E remove​(int index) {
         if (index < 0 || index > size()) {
-            throw new IllegalArgumentException("ungueltiger Index!");
+            throw new IndexOutOfBoundsException(index);
         }
         Node<E> indexElement = head;
         Node<E> loeschen = new Node<E>();
-        // element ist hinterstes Element
-        if (index == size()) {
-            loeschen = tail.getPred();
-            tail.setPred(loeschen.getPred());
-            loeschen.getPred().setSucc(tail);
 
-            // Element ist erstes Element
-        } else if (index == 0) {
-            loeschen = head.getSucc();
-            head.setSucc(loeschen.getSucc());
-            loeschen.getSucc().setPred(head);
-
-            // Element ist in der Mitte
-        } else {
-            for (int i = 0; i < index; i++) {
-                indexElement = indexElement.getSucc();
-            }
-            loeschen = indexElement;
-            loeschen.getSucc().setPred(loeschen.getPred());
-            loeschen.getPred().setSucc(loeschen.getSucc());
+        for (int i = 0; i < index; i++) {
+            indexElement = indexElement.getSucc();
         }
+        loeschen = indexElement;
+        loeschen.getSucc().setPred(loeschen.getPred());
+        loeschen.getPred().setSucc(loeschen.getSucc());
         return (E) loeschen.getContent();
     }
+}
 
-    private void asList(E[] ary) {
-        int counter = 0;
-        for (E elem : ary) {
-            this.add​(counter, elem);
-            counter++;
+class Node<E> {
+    private E content;
+    private Node<E> succ;
+    private Node<E> pred;
+
+    Node() {
+        this(null);
+    }
+
+    Node(E content) {
+        this(content, null);
+    }
+
+    Node(E content, Node<E> succ) {
+        this.content = content;
+        setSucc(succ);
+    }
+
+    void setSucc(Node<E> succ) {
+        this.succ = succ;
+        if (succ != null) {
+            succ.pred = this;
         }
     }
 
-}
+    Node<E> getSucc() {
+        return succ;
+    }
 
-    
-
-
-    class Node<E>{
-        private E content;
-        private Node<E> succ;
-        private Node<E> pred;
-
-        Node() {
-            this(null);
+    void setPred(Node<E> pred) {
+        this.pred = pred;
+        if (pred != null) {
+            pred.succ = this;
         }
+    }
 
-        Node(E content) {
-            this(content, null);
-        }
+    Node<E> getPred() {
+        return pred;
+    }
 
-        Node(E content, Node<E> succ) {
-            this.content = content;
-             setSucc(succ);
-        }
+    public void setContent(E content) {
+        this.content = content;
+    }
 
-        void setSucc(Node<E> succ) {
-            this.succ = succ;
-            if (succ != null){
-                succ.pred = this;
-            }
-        }
+    public E getContent() {
+        return content;
+    }
 
-        Node<E> getSucc(){
-            return succ;
-        }
-
-        void setPred(Node<E> pred){
-            this.pred = pred;
-            if (pred != null){
-                pred.succ = this;
-            }
-        }
-
-        Node<E> getPred() {
-            return pred;
-        }
-
-        public void setContent(E element) {
-            this.content = content;
-        }
-
-        public E getContent() {
-            return content;
-        }
-
-        @Override
-        public String toString() {
-            return ""+content;
-        }
+    @Override
+    public String toString() {
+        return "" + content;
+    }
 
 
 }

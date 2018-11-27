@@ -17,7 +17,7 @@ public class MapUtils {
         Map<Integer, Integer> ergebnis = new HashMap<>();
 
         for (Integer schluessel : m1.keySet()) {
-            if (m2.containsKey(schluessel) && m2.get(schluessel) == m1.get(schluessel)) {
+            if (m2.containsKey(schluessel) && m2.get(schluessel).equals(m1.get(schluessel))) {
                 ergebnis.put(schluessel, m2.get(schluessel));
             }
         }
@@ -39,7 +39,7 @@ public class MapUtils {
             Integer wert1 = m1.get(schluessel1);
             for (Integer schluessel2 : m2.keySet()) {
                 Integer wert2 = m2.get(schluessel2);
-                if (schluessel1 == schluessel2) {
+                if (schluessel1.equals(schluessel2)) {
                     ergebnis.put(schluessel1, new HashSet<>(Arrays.asList(wert1)));
                     ergebnis.get(schluessel1).add(wert2);
                 }
@@ -71,7 +71,7 @@ public class MapUtils {
             }
             for (Integer schluessel2 : m2.keySet()) {
                 Integer wert2 = m2.get(schluessel2);
-                if (schluessel1 == schluessel2 && wert1 == wert2) {
+                if (schluessel1.equals(schluessel2) && wert1.equals(wert2)) {
                     ergebnis.put(schluessel1, wert1);
                 }
                 if (!m1.containsKey(schluessel2)) {
@@ -109,9 +109,9 @@ public class MapUtils {
             }
             for (Integer schluessel2 : m2.keySet()) {
                 Integer wert2 = m2.get(schluessel2);
-                if (schluessel1 == schluessel2) {
+                if (schluessel1.equals(schluessel2)) {
                     ergebnis.put(schluessel1, new HashSet<>(Arrays.asList(wert1)));
-                    if (wert1 != wert2) {
+                    if (!wert1.equals(wert2)) {
                         ergebnis.get(schluessel1).add(wert2);
                     }
                 }
@@ -141,7 +141,7 @@ public class MapUtils {
             ergebnis.put(schluessel1,wert1);
             for (Integer schluessel2 : m2.keySet()) {
                 Integer wert2 = m2.get(schluessel2);
-                if (schluessel1 == schluessel2 && wert1 == wert2) {
+                if (schluessel1.equals(schluessel2) && wert1.equals(wert2)) {
                     ergebnis.remove(schluessel1);
                 }
             }
@@ -164,7 +164,7 @@ public class MapUtils {
             if (!m2.containsKey(schluessel1)){
                 return false;
             }
-            if (m2.get(schluessel1) != wert1){
+            if (!m2.get(schluessel1).equals(wert1)){
                 return false;
             }
         }
