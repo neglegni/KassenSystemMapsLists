@@ -53,8 +53,10 @@ public class KasseLeser {
                         Position pos = new Position(posAry[0].trim(),Integer.parseInt(posAry[1].trim()));
                         // füge neue pos zur rechnung hinzu
                         rechnung.add(pos);
+                        //System.out.println(rechnung.toString());
                     }
                 }
+                kasse.add(rechnung);
             }
         }
         // schließe scanner

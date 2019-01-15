@@ -103,12 +103,21 @@ public class Kasse implements Iterable<Rechnung> {
      * @return am häufigsten bestellt
      */
     public List<Position> beliebtesteProdukte() {
+
+        int size = this.gruppiereNachProdukt()
+                .entrySet()
+                .stream()
+                .max(Comparator.comparingInt(entry -> entry.getValue().size()))
+                .get().getValue().size();
+
         List<Position> ergebnisProd = this.gruppiereNachProdukt()
                 .entrySet()
                 .stream()
+                .filter((entry -> entry.getValue().size() == size))
                 .sorted(Comparator.comparingInt(entry -> entry.getValue().size()))
                 .map(Map.Entry::getKey)
                 .collect(Collectors.toList());
+
         return ergebnisProd;
     }
 
